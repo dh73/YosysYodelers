@@ -1,0 +1,23 @@
+*.o
+*.d
+*.so
+*.out
+compile
+*~
+.*~
+.ipynb_checkpoints/
+*.ipynb-meta
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.gch
+# General temporary and log files
+*.swp
+*.tmp
+*.log
+*.cache
+*~
+.DS_Store
+Thumbs.db

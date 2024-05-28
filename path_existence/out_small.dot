@@ -1,0 +1,17 @@
+digraph "top" {
+label="top";
+rankdir="LR";
+remincross=true;
+n1 [ shape=diamond, label="tmp", color="black", fontcolor="black" ];
+v0 [ label="rstn" ];
+v3 [ label="clk" ];
+c6 [ shape=record, label="{{<p2> C|<p3> D|<p4> R}|$104\n$_SDFF_PN0_|{<p5> Q}}",  ];
+x1 [ shape=record, style=rounded, label="<s0> 0:0 - 2:2 ", color="black", fontcolor="black" ];
+c6:p5:e -> x1:w [arrowhead=odiamond, arrowtail=odiamond, dir=both, color="black", fontcolor="black", label=""];
+x2 [ shape=record, style=rounded, label="<s0> 1:1 - 0:0 ", color="black", fontcolor="black" ];
+x2:e -> c6:p3:w [arrowhead=odiamond, arrowtail=odiamond, dir=both, color="black", fontcolor="black", label=""];
+x1:s0:e -> n1:w [color="black", fontcolor="black", label=""];
+n1:e -> x2:s0:w [color="black", fontcolor="black", label=""];
+v0:e -> c6:p4:w [color="black", fontcolor="black", label=""];
+v3:e -> c6:p2:w [color="black", fontcolor="black", label=""];
+}
